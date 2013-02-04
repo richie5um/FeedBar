@@ -1,0 +1,20 @@
+//
+//  ASWindowControllerDelegate.h
+//  ASDataCollector
+//
+//  Created by RichS on 1/17/13.
+//  Copyright (c) 2013 Rich Somerfield. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@protocol FBWindowControllerDelegate <NSObject>
+
+@required
+-(void)windowControllerOKAction:(id)sender withFields:(NSDictionary*)fields;
+
+@end

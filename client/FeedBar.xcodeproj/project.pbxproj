@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BABB54CF16BB2385001F550C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABB54CE16BB2385001F550C /* Cocoa.framework */; };
+		BABB54D916BB2385001F550C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BABB54D716BB2385001F550C /* InfoPlist.strings */; };
+		BABB54DB16BB2385001F550C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54DA16BB2385001F550C /* main.m */; };
+		BABB54DF16BB2385001F550C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BABB54DD16BB2385001F550C /* Credits.rtf */; };
+		BABB54E216BB2385001F550C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54E116BB2385001F550C /* AppDelegate.m */; };
+		BABB54E516BB2385001F550C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABB54E316BB2385001F550C /* MainMenu.xib */; };
+		BABB550B16BB2411001F550C /* NSDate_FeedParserExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54EE16BB2411001F550C /* NSDate_FeedParserExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB550C16BB2411001F550C /* NSString_extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54F016BB2411001F550C /* NSString_extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB550D16BB2411001F550C /* FPEnclosure.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54F316BB2411001F550C /* FPEnclosure.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB550E16BB2411001F550C /* FPFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54F616BB2411001F550C /* FPFeed.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB550F16BB2411001F550C /* FPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54F816BB2411001F550C /* FPItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551016BB2411001F550C /* FPLink.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54FA16BB2411001F550C /* FPLink.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551116BB2411001F550C /* FPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB54FC16BB2411001F550C /* FPParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551216BB2411001F550C /* FPXMLPair.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB550016BB2411001F550C /* FPXMLPair.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551316BB2411001F550C /* FPXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB550216BB2411001F550C /* FPXMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551416BB2411001F550C /* FPExtensionElementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB550616BB2411001F550C /* FPExtensionElementNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551516BB2411001F550C /* FPExtensionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB550816BB2411001F550C /* FPExtensionNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551616BB2411001F550C /* FPExtensionTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB550A16BB2411001F550C /* FPExtensionTextNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BABB551E16BB24C4001F550C /* DragStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB551D16BB24C4001F550C /* DragStatusView.m */; };
+		BABB552216BB24D8001F550C /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB552116BB24D8001F550C /* Helpers.m */; };
+		BABB552416BB25C7001F550C /* FeedBar.icns in Resources */ = {isa = PBXBuildFile; fileRef = BABB552316BB25C7001F550C /* FeedBar.icns */; };
+		BABB552616BB2911001F550C /* FeedBarBW.icns in Resources */ = {isa = PBXBuildFile; fileRef = BABB552516BB2911001F550C /* FeedBarBW.icns */; };
+		BABB552816BB2949001F550C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABB552716BB2949001F550C /* IOKit.framework */; };
+		BABB552B16BB29C6001F550C /* FeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB552A16BB29C6001F550C /* FeedController.m */; };
+		BABB553316BB2A42001F550C /* ASConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB552E16BB2A42001F550C /* ASConnection.m */; };
+		BABB553416BB2A42001F550C /* ASFormEncodedPOSTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB553016BB2A42001F550C /* ASFormEncodedPOSTRequest.m */; };
+		BABB553516BB2A42001F550C /* ASMultipartPOSTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB553216BB2A42001F550C /* ASMultipartPOSTRequest.m */; };
+		BABB554716BB2AE3001F550C /* NSData+DataConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB553816BB2AE3001F550C /* NSData+DataConversion.m */; };
+		BABB554816BB2AE3001F550C /* NSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB553A16BB2AE3001F550C /* NSData+Hex.m */; };
+		BABB554916BB2AE3001F550C /* NSDate+InternationalStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB553C16BB2AE3001F550C /* NSDate+InternationalStandards.m */; };
+		BABB554A16BB2AE3001F550C /* NSDate+RFC3339.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB553E16BB2AE3001F550C /* NSDate+RFC3339.m */; };
+		BABB554B16BB2AE3001F550C /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB554016BB2AE3001F550C /* NSDictionary+JSON.m */; };
+		BABB554C16BB2AE3001F550C /* NSNumber+HumanReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB554216BB2AE3001F550C /* NSNumber+HumanReadable.m */; };
+		BABB554D16BB2AE3001F550C /* NSString+ASURLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB554416BB2AE3001F550C /* NSString+ASURLAdditions.m */; };
+		BABB554E16BB2AE3001F550C /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB554616BB2AE3001F550C /* NSString+Hex.m */; };
+		BABB6B1E16C05C11009F7AF4 /* News.png in Resources */ = {isa = PBXBuildFile; fileRef = BABB6B1D16C05C11009F7AF4 /* News.png */; };
+		BABB6B2216C05E24009F7AF4 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB6B2016C05E24009F7AF4 /* PreferencesViewController.m */; };
+		BABB6B2316C05E24009F7AF4 /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABB6B2116C05E24009F7AF4 /* PreferencesViewController.xib */; };
+		BABB6B2616C05E53009F7AF4 /* FBGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB6B2516C05E53009F7AF4 /* FBGlobals.m */; };
+		BABB6B2B16C05EB9009F7AF4 /* FBDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB6B2816C05EB9009F7AF4 /* FBDefaults.m */; };
+		BABB6B2C16C05EB9009F7AF4 /* FBSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BABB6B2A16C05EB9009F7AF4 /* FBSettings.m */; };
+		BABB6B3116C06409009F7AF4 /* FeedBarTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = BABB6B3016C06409009F7AF4 /* FeedBarTitle.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BABB54CA16BB2385001F550C /* FeedBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABB54CE16BB2385001F550C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BABB54D116BB2385001F550C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BABB54D216BB2385001F550C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BABB54D316BB2385001F550C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BABB54D616BB2385001F550C /* FeedBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FeedBar-Info.plist"; sourceTree = "<group>"; };
+		BABB54D816BB2385001F550C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BABB54DA16BB2385001F550C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BABB54DC16BB2385001F550C /* FeedBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeedBar-Prefix.pch"; sourceTree = "<group>"; };
+		BABB54DE16BB2385001F550C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BABB54E016BB2385001F550C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BABB54E116BB2385001F550C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BABB54E416BB2385001F550C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BABB54ED16BB2411001F550C /* NSDate_FeedParserExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate_FeedParserExtensions.h; sourceTree = "<group>"; };
+		BABB54EE16BB2411001F550C /* NSDate_FeedParserExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDate_FeedParserExtensions.m; sourceTree = "<group>"; };
+		BABB54EF16BB2411001F550C /* NSString_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_extensions.h; sourceTree = "<group>"; };
+		BABB54F016BB2411001F550C /* NSString_extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_extensions.m; sourceTree = "<group>"; };
+		BABB54F116BB2411001F550C /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedParser.h; sourceTree = "<group>"; };
+		BABB54F216BB2411001F550C /* FPEnclosure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEnclosure.h; sourceTree = "<group>"; };
+		BABB54F316BB2411001F550C /* FPEnclosure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEnclosure.m; sourceTree = "<group>"; };
+		BABB54F416BB2411001F550C /* FPErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPErrors.h; sourceTree = "<group>"; };
+		BABB54F516BB2411001F550C /* FPFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPFeed.h; sourceTree = "<group>"; };
+		BABB54F616BB2411001F550C /* FPFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPFeed.m; sourceTree = "<group>"; };
+		BABB54F716BB2411001F550C /* FPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPItem.h; sourceTree = "<group>"; };
+		BABB54F816BB2411001F550C /* FPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPItem.m; sourceTree = "<group>"; };
+		BABB54F916BB2411001F550C /* FPLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLink.h; sourceTree = "<group>"; };
+		BABB54FA16BB2411001F550C /* FPLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLink.m; sourceTree = "<group>"; };
+		BABB54FB16BB2411001F550C /* FPParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPParser.h; sourceTree = "<group>"; };
+		BABB54FC16BB2411001F550C /* FPParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPParser.m; sourceTree = "<group>"; };
+		BABB54FE16BB2411001F550C /* FPExtensionElementNode_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionElementNode_Private.h; sourceTree = "<group>"; };
+		BABB54FF16BB2411001F550C /* FPXMLPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPXMLPair.h; sourceTree = "<group>"; };
+		BABB550016BB2411001F550C /* FPXMLPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPXMLPair.m; sourceTree = "<group>"; };
+		BABB550116BB2411001F550C /* FPXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPXMLParser.h; sourceTree = "<group>"; };
+		BABB550216BB2411001F550C /* FPXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPXMLParser.m; sourceTree = "<group>"; };
+		BABB550316BB2411001F550C /* FPXMLParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPXMLParserProtocol.h; sourceTree = "<group>"; };
+		BABB550516BB2411001F550C /* FPExtensionElementNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionElementNode.h; sourceTree = "<group>"; };
+		BABB550616BB2411001F550C /* FPExtensionElementNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPExtensionElementNode.m; sourceTree = "<group>"; };
+		BABB550716BB2411001F550C /* FPExtensionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionNode.h; sourceTree = "<group>"; };
+		BABB550816BB2411001F550C /* FPExtensionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPExtensionNode.m; sourceTree = "<group>"; };
+		BABB550916BB2411001F550C /* FPExtensionTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionTextNode.h; sourceTree = "<group>"; };
+		BABB550A16BB2411001F550C /* FPExtensionTextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPExtensionTextNode.m; sourceTree = "<group>"; };
+		BABB551C16BB24C4001F550C /* DragStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragStatusView.h; sourceTree = "<group>"; };
+		BABB551D16BB24C4001F550C /* DragStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragStatusView.m; sourceTree = "<group>"; };
+		BABB552016BB24D8001F550C /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		BABB552116BB24D8001F550C /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
+		BABB552316BB25C7001F550C /* FeedBar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FeedBar.icns; sourceTree = "<group>"; };
+		BABB552516BB2911001F550C /* FeedBarBW.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FeedBarBW.icns; sourceTree = "<group>"; };
+		BABB552716BB2949001F550C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		BABB552916BB29C6001F550C /* FeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedController.h; sourceTree = "<group>"; };
+		BABB552A16BB29C6001F550C /* FeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedController.m; sourceTree = "<group>"; };
+		BABB552D16BB2A42001F550C /* ASConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASConnection.h; sourceTree = "<group>"; };
+		BABB552E16BB2A42001F550C /* ASConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASConnection.m; sourceTree = "<group>"; };
+		BABB552F16BB2A42001F550C /* ASFormEncodedPOSTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFormEncodedPOSTRequest.h; sourceTree = "<group>"; };
+		BABB553016BB2A42001F550C /* ASFormEncodedPOSTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFormEncodedPOSTRequest.m; sourceTree = "<group>"; };
+		BABB553116BB2A42001F550C /* ASMultipartPOSTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMultipartPOSTRequest.h; sourceTree = "<group>"; };
+		BABB553216BB2A42001F550C /* ASMultipartPOSTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMultipartPOSTRequest.m; sourceTree = "<group>"; };
+		BABB553716BB2AE3001F550C /* NSData+DataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DataConversion.h"; sourceTree = "<group>"; };
+		BABB553816BB2AE3001F550C /* NSData+DataConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DataConversion.m"; sourceTree = "<group>"; };
+		BABB553916BB2AE3001F550C /* NSData+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hex.h"; sourceTree = "<group>"; };
+		BABB553A16BB2AE3001F550C /* NSData+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hex.m"; sourceTree = "<group>"; };
+		BABB553B16BB2AE3001F550C /* NSDate+InternationalStandards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternationalStandards.h"; sourceTree = "<group>"; };
+		BABB553C16BB2AE3001F550C /* NSDate+InternationalStandards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternationalStandards.m"; sourceTree = "<group>"; };
+		BABB553D16BB2AE3001F550C /* NSDate+RFC3339.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC3339.h"; sourceTree = "<group>"; };
+		BABB553E16BB2AE3001F550C /* NSDate+RFC3339.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC3339.m"; sourceTree = "<group>"; };
+		BABB553F16BB2AE3001F550C /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		BABB554016BB2AE3001F550C /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		BABB554116BB2AE3001F550C /* NSNumber+HumanReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+HumanReadable.h"; sourceTree = "<group>"; };
+		BABB554216BB2AE3001F550C /* NSNumber+HumanReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+HumanReadable.m"; sourceTree = "<group>"; };
+		BABB554316BB2AE3001F550C /* NSString+ASURLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ASURLAdditions.h"; sourceTree = "<group>"; };
+		BABB554416BB2AE3001F550C /* NSString+ASURLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ASURLAdditions.m"; sourceTree = "<group>"; };
+		BABB554516BB2AE3001F550C /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
+		BABB554616BB2AE3001F550C /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
+		BABB6B1D16C05C11009F7AF4 /* News.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = News.png; sourceTree = "<group>"; };
+		BABB6B1F16C05E24009F7AF4 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		BABB6B2016C05E24009F7AF4 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		BABB6B2116C05E24009F7AF4 /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
+		BABB6B2416C05E53009F7AF4 /* FBGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGlobals.h; sourceTree = "<group>"; };
+		BABB6B2516C05E53009F7AF4 /* FBGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBGlobals.m; sourceTree = "<group>"; };
+		BABB6B2716C05EB9009F7AF4 /* FBDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDefaults.h; sourceTree = "<group>"; };
+		BABB6B2816C05EB9009F7AF4 /* FBDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDefaults.m; sourceTree = "<group>"; };
+		BABB6B2916C05EB9009F7AF4 /* FBSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSettings.h; sourceTree = "<group>"; };
+		BABB6B2A16C05EB9009F7AF4 /* FBSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSettings.m; sourceTree = "<group>"; };
+		BABB6B2D16C05F79009F7AF4 /* ASWindowControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASWindowControllerDelegate.h; sourceTree = "<group>"; };
+		BABB6B3016C06409009F7AF4 /* FeedBarTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeedBarTitle.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BABB54C716BB2385001F550C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABB552816BB2949001F550C /* IOKit.framework in Frameworks */,
+				BABB54CF16BB2385001F550C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BABB54BF16BB2385001F550C = {
+			isa = PBXGroup;
+			children = (
+				BABB552716BB2949001F550C /* IOKit.framework */,
+				BABB552516BB2911001F550C /* FeedBarBW.icns */,
+				BABB552316BB25C7001F550C /* FeedBar.icns */,
+				BABB54D416BB2385001F550C /* FeedBar */,
+				BABB54CD16BB2385001F550C /* Frameworks */,
+				BABB54CB16BB2385001F550C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BABB54CB16BB2385001F550C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54CA16BB2385001F550C /* FeedBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BABB54CD16BB2385001F550C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54CE16BB2385001F550C /* Cocoa.framework */,
+				BABB54D016BB2385001F550C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BABB54D016BB2385001F550C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54D116BB2385001F550C /* AppKit.framework */,
+				BABB54D216BB2385001F550C /* CoreData.framework */,
+				BABB54D316BB2385001F550C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BABB54D416BB2385001F550C /* FeedBar */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54E016BB2385001F550C /* AppDelegate.h */,
+				BABB54E116BB2385001F550C /* AppDelegate.m */,
+				BABB552C16BB2A42001F550C /* Communications */,
+				BABB553616BB2AE3001F550C /* Extensions */,
+				BABB6B2416C05E53009F7AF4 /* FBGlobals.h */,
+				BABB6B2516C05E53009F7AF4 /* FBGlobals.m */,
+				BABB552916BB29C6001F550C /* FeedController.h */,
+				BABB552A16BB29C6001F550C /* FeedController.m */,
+				BABB54EB16BB2411001F550C /* FeedParser */,
+				BABB551F16BB24CA001F550C /* Helpers */,
+				BABB54E316BB2385001F550C /* MainMenu.xib */,
+				BABB6B1C16C05C05009F7AF4 /* Resources */,
+				BABB54D516BB2385001F550C /* Supporting Files */,
+				BABB551B16BB24B2001F550C /* Views */,
+			);
+			path = FeedBar;
+			sourceTree = "<group>";
+		};
+		BABB54D516BB2385001F550C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54D616BB2385001F550C /* FeedBar-Info.plist */,
+				BABB54D716BB2385001F550C /* InfoPlist.strings */,
+				BABB54DA16BB2385001F550C /* main.m */,
+				BABB54DC16BB2385001F550C /* FeedBar-Prefix.pch */,
+				BABB54DD16BB2385001F550C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BABB54EB16BB2411001F550C /* FeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54EC16BB2411001F550C /* Extensions */,
+				BABB54F116BB2411001F550C /* FeedParser.h */,
+				BABB54F216BB2411001F550C /* FPEnclosure.h */,
+				BABB54F316BB2411001F550C /* FPEnclosure.m */,
+				BABB54F416BB2411001F550C /* FPErrors.h */,
+				BABB54F516BB2411001F550C /* FPFeed.h */,
+				BABB54F616BB2411001F550C /* FPFeed.m */,
+				BABB54F716BB2411001F550C /* FPItem.h */,
+				BABB54F816BB2411001F550C /* FPItem.m */,
+				BABB54F916BB2411001F550C /* FPLink.h */,
+				BABB54FA16BB2411001F550C /* FPLink.m */,
+				BABB54FB16BB2411001F550C /* FPParser.h */,
+				BABB54FC16BB2411001F550C /* FPParser.m */,
+				BABB54FD16BB2411001F550C /* Internal */,
+				BABB550416BB2411001F550C /* XML Extensions */,
+			);
+			path = FeedParser;
+			sourceTree = "<group>";
+		};
+		BABB54EC16BB2411001F550C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54ED16BB2411001F550C /* NSDate_FeedParserExtensions.h */,
+				BABB54EE16BB2411001F550C /* NSDate_FeedParserExtensions.m */,
+				BABB54EF16BB2411001F550C /* NSString_extensions.h */,
+				BABB54F016BB2411001F550C /* NSString_extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BABB54FD16BB2411001F550C /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				BABB54FE16BB2411001F550C /* FPExtensionElementNode_Private.h */,
+				BABB54FF16BB2411001F550C /* FPXMLPair.h */,
+				BABB550016BB2411001F550C /* FPXMLPair.m */,
+				BABB550116BB2411001F550C /* FPXMLParser.h */,
+				BABB550216BB2411001F550C /* FPXMLParser.m */,
+				BABB550316BB2411001F550C /* FPXMLParserProtocol.h */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		BABB550416BB2411001F550C /* XML Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BABB550516BB2411001F550C /* FPExtensionElementNode.h */,
+				BABB550616BB2411001F550C /* FPExtensionElementNode.m */,
+				BABB550716BB2411001F550C /* FPExtensionNode.h */,
+				BABB550816BB2411001F550C /* FPExtensionNode.m */,
+				BABB550916BB2411001F550C /* FPExtensionTextNode.h */,
+				BABB550A16BB2411001F550C /* FPExtensionTextNode.m */,
+			);
+			path = "XML Extensions";
+			sourceTree = "<group>";
+		};
+		BABB551B16BB24B2001F550C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BABB6B2D16C05F79009F7AF4 /* ASWindowControllerDelegate.h */,
+				BABB6B1F16C05E24009F7AF4 /* PreferencesViewController.h */,
+				BABB6B2016C05E24009F7AF4 /* PreferencesViewController.m */,
+				BABB6B2116C05E24009F7AF4 /* PreferencesViewController.xib */,
+				BABB551C16BB24C4001F550C /* DragStatusView.h */,
+				BABB551D16BB24C4001F550C /* DragStatusView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BABB551F16BB24CA001F550C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BABB6B2716C05EB9009F7AF4 /* FBDefaults.h */,
+				BABB6B2816C05EB9009F7AF4 /* FBDefaults.m */,
+				BABB6B2916C05EB9009F7AF4 /* FBSettings.h */,
+				BABB6B2A16C05EB9009F7AF4 /* FBSettings.m */,
+				BABB552016BB24D8001F550C /* Helpers.h */,
+				BABB552116BB24D8001F550C /* Helpers.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		BABB552C16BB2A42001F550C /* Communications */ = {
+			isa = PBXGroup;
+			children = (
+				BABB552D16BB2A42001F550C /* ASConnection.h */,
+				BABB552E16BB2A42001F550C /* ASConnection.m */,
+				BABB552F16BB2A42001F550C /* ASFormEncodedPOSTRequest.h */,
+				BABB553016BB2A42001F550C /* ASFormEncodedPOSTRequest.m */,
+				BABB553116BB2A42001F550C /* ASMultipartPOSTRequest.h */,
+				BABB553216BB2A42001F550C /* ASMultipartPOSTRequest.m */,
+			);
+			path = Communications;
+			sourceTree = "<group>";
+		};
+		BABB553616BB2AE3001F550C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BABB553716BB2AE3001F550C /* NSData+DataConversion.h */,
+				BABB553816BB2AE3001F550C /* NSData+DataConversion.m */,
+				BABB553916BB2AE3001F550C /* NSData+Hex.h */,
+				BABB553A16BB2AE3001F550C /* NSData+Hex.m */,
+				BABB553B16BB2AE3001F550C /* NSDate+InternationalStandards.h */,
+				BABB553C16BB2AE3001F550C /* NSDate+InternationalStandards.m */,
+				BABB553D16BB2AE3001F550C /* NSDate+RFC3339.h */,
+				BABB553E16BB2AE3001F550C /* NSDate+RFC3339.m */,
+				BABB553F16BB2AE3001F550C /* NSDictionary+JSON.h */,
+				BABB554016BB2AE3001F550C /* NSDictionary+JSON.m */,
+				BABB554116BB2AE3001F550C /* NSNumber+HumanReadable.h */,
+				BABB554216BB2AE3001F550C /* NSNumber+HumanReadable.m */,
+				BABB554316BB2AE3001F550C /* NSString+ASURLAdditions.h */,
+				BABB554416BB2AE3001F550C /* NSString+ASURLAdditions.m */,
+				BABB554516BB2AE3001F550C /* NSString+Hex.h */,
+				BABB554616BB2AE3001F550C /* NSString+Hex.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BABB6B1C16C05C05009F7AF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BABB6B3016C06409009F7AF4 /* FeedBarTitle.png */,
+				BABB6B1D16C05C11009F7AF4 /* News.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BABB54C916BB2385001F550C /* FeedBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABB54E816BB2385001F550C /* Build configuration list for PBXNativeTarget "FeedBar" */;
+			buildPhases = (
+				BABB54C616BB2385001F550C /* Sources */,
+				BABB54C716BB2385001F550C /* Frameworks */,
+				BABB54C816BB2385001F550C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeedBar;
+			productName = FeedBar;
+			productReference = BABB54CA16BB2385001F550C /* FeedBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BABB54C116BB2385001F550C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Rich Somerfield";
+			};
+			buildConfigurationList = BABB54C416BB2385001F550C /* Build configuration list for PBXProject "FeedBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BABB54BF16BB2385001F550C;
+			productRefGroup = BABB54CB16BB2385001F550C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BABB54C916BB2385001F550C /* FeedBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BABB54C816BB2385001F550C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABB54D916BB2385001F550C /* InfoPlist.strings in Resources */,
+				BABB54DF16BB2385001F550C /* Credits.rtf in Resources */,
+				BABB54E516BB2385001F550C /* MainMenu.xib in Resources */,
+				BABB552416BB25C7001F550C /* FeedBar.icns in Resources */,
+				BABB552616BB2911001F550C /* FeedBarBW.icns in Resources */,
+				BABB6B1E16C05C11009F7AF4 /* News.png in Resources */,
+				BABB6B2316C05E24009F7AF4 /* PreferencesViewController.xib in Resources */,
+				BABB6B3116C06409009F7AF4 /* FeedBarTitle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BABB54C616BB2385001F550C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABB54DB16BB2385001F550C /* main.m in Sources */,
+				BABB54E216BB2385001F550C /* AppDelegate.m in Sources */,
+				BABB550B16BB2411001F550C /* NSDate_FeedParserExtensions.m in Sources */,
+				BABB550C16BB2411001F550C /* NSString_extensions.m in Sources */,
+				BABB550D16BB2411001F550C /* FPEnclosure.m in Sources */,
+				BABB550E16BB2411001F550C /* FPFeed.m in Sources */,
+				BABB550F16BB2411001F550C /* FPItem.m in Sources */,
+				BABB551016BB2411001F550C /* FPLink.m in Sources */,
+				BABB551116BB2411001F550C /* FPParser.m in Sources */,
+				BABB551216BB2411001F550C /* FPXMLPair.m in Sources */,
+				BABB551316BB2411001F550C /* FPXMLParser.m in Sources */,
+				BABB551416BB2411001F550C /* FPExtensionElementNode.m in Sources */,
+				BABB551516BB2411001F550C /* FPExtensionNode.m in Sources */,
+				BABB551616BB2411001F550C /* FPExtensionTextNode.m in Sources */,
+				BABB551E16BB24C4001F550C /* DragStatusView.m in Sources */,
+				BABB552216BB24D8001F550C /* Helpers.m in Sources */,
+				BABB552B16BB29C6001F550C /* FeedController.m in Sources */,
+				BABB553316BB2A42001F550C /* ASConnection.m in Sources */,
+				BABB553416BB2A42001F550C /* ASFormEncodedPOSTRequest.m in Sources */,
+				BABB553516BB2A42001F550C /* ASMultipartPOSTRequest.m in Sources */,
+				BABB554716BB2AE3001F550C /* NSData+DataConversion.m in Sources */,
+				BABB554816BB2AE3001F550C /* NSData+Hex.m in Sources */,
+				BABB554916BB2AE3001F550C /* NSDate+InternationalStandards.m in Sources */,
+				BABB554A16BB2AE3001F550C /* NSDate+RFC3339.m in Sources */,
+				BABB554B16BB2AE3001F550C /* NSDictionary+JSON.m in Sources */,
+				BABB554C16BB2AE3001F550C /* NSNumber+HumanReadable.m in Sources */,
+				BABB554D16BB2AE3001F550C /* NSString+ASURLAdditions.m in Sources */,
+				BABB554E16BB2AE3001F550C /* NSString+Hex.m in Sources */,
+				BABB6B2216C05E24009F7AF4 /* PreferencesViewController.m in Sources */,
+				BABB6B2616C05E53009F7AF4 /* FBGlobals.m in Sources */,
+				BABB6B2B16C05EB9009F7AF4 /* FBDefaults.m in Sources */,
+				BABB6B2C16C05EB9009F7AF4 /* FBSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BABB54D716BB2385001F550C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BABB54D816BB2385001F550C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BABB54DD16BB2385001F550C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BABB54DE16BB2385001F550C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BABB54E316BB2385001F550C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BABB54E416BB2385001F550C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BABB54E616BB2385001F550C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BABB54E716BB2385001F550C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BABB54E916BB2385001F550C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FeedBar/FeedBar-Prefix.pch";
+				INFOPLIST_FILE = "FeedBar/FeedBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BABB54EA16BB2385001F550C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FeedBar/FeedBar-Prefix.pch";
+				INFOPLIST_FILE = "FeedBar/FeedBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BABB54C416BB2385001F550C /* Build configuration list for PBXProject "FeedBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABB54E616BB2385001F550C /* Debug */,
+				BABB54E716BB2385001F550C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABB54E816BB2385001F550C /* Build configuration list for PBXNativeTarget "FeedBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABB54E916BB2385001F550C /* Debug */,
+				BABB54EA16BB2385001F550C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BABB54C116BB2385001F550C /* Project object */;
+}
