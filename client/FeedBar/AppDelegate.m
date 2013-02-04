@@ -141,7 +141,7 @@
         [menuItem.offStateImage setTemplate:YES];
         
         menuItem.target = self;
-        menuItem.representedObject = menuItem;
+        menuItem.representedObject = item;
         [_menuBarMenu insertItem:menuItem atIndex:0];
     }
     
