@@ -9,5 +9,5 @@
 #import "FBGlobals.h"
 
 NSString* const kFBPreferencesFeedURL = @"Preferences:FeedURL";
-NSString* const kFBPreferencesFeedURLDefault = @"http://resprojects.development.local:8888/api/rss/updates";
+NSString* const kFBPreferencesFeedURLDefault = @"";
 NSString* const kFBPreferencesLaunchAtLogin = @"Preferences:LaunchAtLogin";
